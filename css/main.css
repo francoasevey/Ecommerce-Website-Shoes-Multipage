@@ -140,10 +140,11 @@ h4{
 }
 
 /*====================HEADER=====================*/
-header li > a{
+header li > a {
     display: flex;
     position: relative;
     line-height: inherit;
+    transition: var(--trans-color);
 }
 .header-top .wrapper{
     font-size: var(--font-small);
