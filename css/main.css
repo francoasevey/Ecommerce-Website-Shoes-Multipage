@@ -142,6 +142,19 @@ h4{
 .mobile-hide{
     display: none;
 }
+
+.object-cover img{
+    position: absolute;
+    object-fit: cover;
+    width: var(--percent100);
+    height: var(--percent100);
+    display: block;
+}
+.products .media{
+    position: relative;
+    flex-shrink: 0;
+    overflow: hidden;
+}
 /*====================HEADER=====================*/
 header li > a {
     display: flex;
@@ -343,5 +356,16 @@ nav .fly-item{
     }
     nav .mega .products .media{
         height: 400px;
+    }
+    nav .mega .products .text-content{
+        line-height: initial;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5em;
+        margin-top: 0.5em;
+        position: absolute;
+        bottom: 4em;
+        width: var(--percent100);
     }
 }
