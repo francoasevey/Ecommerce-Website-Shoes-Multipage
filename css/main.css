@@ -155,6 +155,14 @@ h4{
     flex-shrink: 0;
     overflow: hidden;
 }
+.primary-button, .secondary-button, .light-button{
+    font-size: var(--font-small);
+    padding: 0.9em 2em;
+    height: auto;
+    width: fit-content;
+    border-radius: 2em;
+    transform: var(--trans-background-color);
+}
 /*====================HEADER=====================*/
 header li > a {
     display: flex;
@@ -367,5 +375,11 @@ nav .fly-item{
         position: absolute;
         bottom: 4em;
         width: var(--percent100);
+    }
+    nav .mega .products .text-content h4{
+        font-size: 2em;
+        font-weight: var(--fw8);
+        text-align: center;
+        color: var(--secondary-dark-color);
     }
 }
