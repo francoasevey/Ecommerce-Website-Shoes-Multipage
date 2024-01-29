@@ -132,7 +132,7 @@ h4{
 }
 .icon-small{
     font-size: 1.25rem;
-    margin: auto;
+    margin-left: auto;
 }
 .icon-large{
     font-size: 1.75em;
@@ -318,6 +318,11 @@ nav .fly-item{
     margin-bottom: 1.5rem;
     z-index: 1;
 }
+.dpt-menu > ul > li > a{
+    font-size: var(--font-small);
+    height: 46px;
+    align-items: center;
+}
 
 .header-main{
     background-color: var(--secondary-dark-color);
@@ -492,5 +497,19 @@ form.search button:hover{
     .header-main .right{
         max-width: 600px;
         margin-left: auto;
+    }
+    .dpt-menu{
+        position: absolute;
+        top: var(--percent100);
+        width: 300px;
+        background-color: var(--white-color);
+        border: 1px solid var(--border-color);
+        border-top: 0;
+        border-bottom: 0;
+    }
+    .dpt-menu > ul > li > a{
+        font-weight: var(--fw5);
+        padding: 0 1.5em;
+        border-bottom: 1px solid var(--border-color);
     }
 }
