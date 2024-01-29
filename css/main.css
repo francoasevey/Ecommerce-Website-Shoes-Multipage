@@ -161,7 +161,18 @@ h4{
     height: auto;
     width: fit-content;
     border-radius: 2em;
-    transform: var(--trans-background-color);
+    transition: var(--trans-background-color);
+}
+.primary-button{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+.primary-button:hover{
+    background-color: var(--dark-color);
+}
+.secondary-button{
+    background-color: var(--secondary-dark-color);
+    color: var(--white-color);
 }
 /*====================HEADER=====================*/
 header li > a {
