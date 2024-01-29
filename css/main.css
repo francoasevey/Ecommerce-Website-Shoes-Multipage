@@ -365,7 +365,7 @@ form.search input{
     font-size: 0.9em;
     font-weight: var(--fw3);
 }
-form.search :where(span.button){
+form.search :where(span,button){
     position: absolute;
     top: 0;
     padding: 0.55em 1.5em;
@@ -488,5 +488,9 @@ form.search button:hover{
         font-weight: var(--fw8);
         text-align: center;
         color: var(--secondary-dark-color);
+    }
+    .header-main .right{
+        max-width: 600px;
+        margin-left: auto;
     }
 }
