@@ -353,6 +353,25 @@ nav .fly-item{
     height: 60px;
     width: 60px;
 }
+.dpt-cat .dpt-trigger{
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 1.3em;
+	height: 60px;
+	width: 60px;
+}
+.dpt-menu > ul > li > a{
+	font-size: var(--font-small);
+	height: 46px;
+	align-items: center;
+}
+.dpt-menu .has-child:hover ul{
+	display: block;
+}
+.dpt-menu .has-child li a:hover{
+	text-decoration: underline;
+}
 
 .header-main .right{
     flex: 1;
@@ -530,6 +549,7 @@ form.search button:hover{
         background-repeat: no-repeat;
         background-size: auto;
     }
+		/*
     .dpt-menu .mega{
         display: block;
     }
@@ -542,11 +562,11 @@ form.search button:hover{
         background-image: url('/assets/menu/menu_bg3.jpg');
     }.dpt-menu .homekit .mega{
         background-image: url('/assets/menu/menu_bg4.jpg');
-    }
+    }*/
     .dpt-menu .homekit .mega{
-        background-image: url('/assets/menu/menu_bg1.jpg');
+        background-image: url('/assets/menu/menu_bg4.jpg');
     }
-    .dpt-menu .has-child >  :where(ul.mega)::before{
+    .dpt-menu .has-child >  :where(ul,.mega)::before{
         content: '';
         position: absolute;
         top: 0;
