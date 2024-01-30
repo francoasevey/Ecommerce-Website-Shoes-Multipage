@@ -413,7 +413,20 @@ form.search button:hover{
     background-color: var(--dark-color);
 }
 /*====================REUSABLE SELECTOR=====================*/
-
+.site-off{
+	position: fixed;
+	width: 320px;
+	height: var(--percent100);
+	background-color: var(--white-color);
+	overflow-y: auto;
+	z-index: 100;
+}
+.off-canvas{
+	width: var(--percent100);
+	height: var(--percent100);
+	touch-action: auto;
+	padding: 1.5em;
+}
 /*====================REUSABLE SELECTOR=====================*/
 
 /*====================REUSABLE SELECTOR=====================*/
