@@ -422,7 +422,7 @@ form.search button:hover{
 	z-index: 1000;
     transform: translateX(-100%);
     visibility: hidden;
-    transition: transform .4s visibility .4s;
+    transition: transform .4s, visibility .4s;
     will-change: transform, visibility;
 }
 .showmenu .site-off{
@@ -525,8 +525,19 @@ form.search button:hover{
 	line-height: 16px;
 	margin: 0 0.5em 0.5em 0;
 }
-/*====================REUSABLE SELECTOR=====================*/
-
+/*====================Slider=====================*/
+.slider > div > .wrapper{
+    width: calc(100% - (300px + 2em));
+    margin-left: auto;
+}
+.slider .item{
+    position: relative;
+    height: 474px;
+}
+.slider .text-content{
+    position: relative;
+    height: var(--percent100);
+}
 /*====================REUSABLE SELECTOR=====================*/
 
 /*====================REUSABLE SELECTOR=====================*/
