@@ -526,9 +526,18 @@ form.search button:hover{
 	margin: 0 0.5em 0.5em 0;
 }
 /*====================Slider=====================*/
-.slider > div > .wrapper{
-    width: calc(100% - (300px + 2em));
-    margin-left: auto;
+
+.slider .item::before{
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: 0;
+    width: 450px;
+    height: 300px;
+    background-color: var(--white-color);
+    z-index: 1;
+    filter: blur(50px);
+    opacity: .8;
 }
 .slider .item{
     position: relative;
@@ -554,10 +563,13 @@ form.search button:hover{
     font-weight: var(--fw3);
     columns: var(--light-text-color) ;
 }
-.text-content :where(h2,h3) span:first-child{
+.text-content :where(h2,h3) span:last-child{
     color: var(--secondary-dark-color);
     text-transform: uppercase;
     letter-spacing: -1px;
+}
+.swiper-pagination .swiper-pagination-bullet.active{
+    background-color: var(--secondary-dark-color);
 }
 /*====================REUSABLE SELECTOR=====================*/
 
@@ -695,17 +707,16 @@ form.search button:hover{
 		/*
     .dpt-menu .mega{
         display: block;
-    }
+    }*/
     .dpt-menu .beauty ul{
         background-image: url('/assets/menu/menu_bg1.jpg');
     }
     .dpt-menu .electric ul{
         background-image: url('/assets/menu/menu_bg2.jpg');
-    }.dpt-menu .fashion ul{
+    }
+    .dpt-menu .fashion ul{
         background-image: url('/assets/menu/menu_bg3.jpg');
-    }.dpt-menu .homekit .mega{
-        background-image: url('/assets/menu/menu_bg4.jpg');
-    }*/
+    }
     .dpt-menu .homekit .mega{
         background-image: url('/assets/menu/menu_bg4.jpg');
     }
@@ -725,5 +736,9 @@ form.search button:hover{
     .dpt-menu .has-child:hover .mega{
         display: flex;
     }
-
+    /*Slider*/
+    .slider > div > .wrapper{
+        width: calc(100% - (300px + 2em));
+        margin-left: auto;
+    }
 }
