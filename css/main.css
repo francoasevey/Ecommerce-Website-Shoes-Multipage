@@ -720,6 +720,11 @@ form.search button:hover{
     background-position-y: top;
     background-repeat-y: no-repeat;
 }
+.products .price .current{
+    font-size: calc(1em + 1vw);
+    color: var(--primary-color);
+    margin-right: 0.25em;
+}
 .products h3{
     font-family: 'Rubik';
     font-size: 1em;
@@ -731,6 +736,10 @@ form.search button:hover{
 }
 .products h3 a:hover{
     text-decoration: underline;
+}
+.products .price .normal{
+    color: var(--light-text-color);
+    text-decoration: line-through;
 }
 .products.big .item{
     flex-direction: column;
@@ -752,7 +761,11 @@ form.search button:hover{
 /*====================REUSABLE SELECTOR=====================*/
 /*====================REUSABLE SELECTOR=====================*/
 
-
+@media screen and (min-width: 768px) {
+    .products .price .current{
+        font-size: 1.25em;
+    }
+}
 
 @media screen and (min-width: 992px) {
     .container{
