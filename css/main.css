@@ -836,7 +836,27 @@ form.search button:hover{
     border: 1px solid var(--border-color);
 }
 .banner .image{
-    text-align: center;
+    text-align: right;
+}
+.banner .get-gray{
+    background-color: var(--border-color);
+}
+.banner :where(.text-content, .over-link){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: var(--percent100);
+    height: var(--percent100);
+}
+.banner .text-content{
+    padding: 1.5em 2.5em;
+}
+.banner h3 {
+    font-size: calc(1em + 0.5vw);
+    font-weight: var(--fw3);
+}
+.banner h3 span{
+    font-size: 80%;
 }
 /*====================REUSABLE SELECTOR=====================*/
 /*====================REUSABLE SELECTOR=====================*/
