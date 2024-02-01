@@ -720,7 +720,18 @@ form.search button:hover{
     background-position-y: top;
     background-repeat-y: no-repeat;
 }
-
+.products h3{
+    font-family: 'Rubik';
+    font-size: 1em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+.products h3 a:hover{
+    text-decoration: underline;
+}
 .products.big .item{
     flex-direction: column;
     padding: 2.5em;
