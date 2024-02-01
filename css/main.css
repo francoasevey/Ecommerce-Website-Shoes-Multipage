@@ -829,7 +829,15 @@ form.search button:hover{
 .products.main .item:hover .content > *:not(.footer){
     z-index: 3;
 }
-/*====================REUSABLE SELECTOR=====================*/
+/*====================BANNER=====================*/
+.banner .item{
+    position: relative;
+    background-color: var(--white-color);
+    border: 1px solid var(--border-color);
+}
+.banner .image{
+    text-align: center;
+}
 /*====================REUSABLE SELECTOR=====================*/
 /*====================REUSABLE SELECTOR=====================*/
 /*====================REUSABLE SELECTOR=====================*/
@@ -850,7 +858,7 @@ form.search button:hover{
     .products .price .current{
         font-size: 1.25em;
     }
-    .products.mini{
+    .products.mini, .banner .row{
         flex: 0 0 50%
     }
     .products.main .item{
