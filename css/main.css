@@ -720,6 +720,9 @@ form.search button:hover{
     background-position-y: top;
     background-repeat-y: no-repeat;
 }
+.products .item:where(:nth-child(3), :nth-child(3)) .stars{
+    width: 64px;
+}
 .products .price .current{
     font-size: calc(1em + 1vw);
     color: var(--primary-color);
