@@ -1024,7 +1024,7 @@ form.search button:hover{
         max-height: 373px;
     }
     
-    .products.mini{
+    .products.main .item{
         flex: 0 0 25%
     }
 }
