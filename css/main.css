@@ -861,6 +861,21 @@ form.search button:hover{
 .banner .primary-button{
     z-index: 3;
 }
+.banners .product-categories .item{
+    display: flex;
+    padding: 1.5em;
+}
+.banners .product-categories .image{
+    max-width: 150px;
+}
+.mini-links ul{
+    font-size: var(--font-small);
+    color: var(--light-text-color);
+    margin-top: 1em;
+}
+.banners .second-links{
+    margin-top: 2em;
+}
 /*====================REUSABLE SELECTOR=====================*/
 /*====================REUSABLE SELECTOR=====================*/
 /*====================REUSABLE SELECTOR=====================*/
@@ -1051,7 +1066,7 @@ form.search button:hover{
         width: calc(100% - (300px + 2em));
         margin-left: auto;
     }
-    .trending .products{
+    .trending .products, .product-categories .row{
         flex: 0 0 33.3333%;
     }
     .products.big .media{
