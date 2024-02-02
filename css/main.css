@@ -876,6 +876,9 @@ form.search button:hover{
 .banners .second-links{
     margin-top: 2em;
 }
+.mini-links li a:hover{
+    text-decoration: underline;
+}
 /*====================REUSABLE SELECTOR=====================*/
 /*====================REUSABLE SELECTOR=====================*/
 /*====================REUSABLE SELECTOR=====================*/
