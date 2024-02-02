@@ -561,7 +561,7 @@ form.search button:hover{
 }
 .text-content :where(h2,h3) span:first-child{
     font-weight: var(--fw3);
-    columns: var(--light-text-color) ;
+    color: var(--light-text-color) ;
 }
 .text-content :where(h2,h3) span:last-child{
     color: var(--secondary-dark-color);
@@ -857,6 +857,9 @@ form.search button:hover{
 }
 .banner h3 span{
     font-size: 80%;
+}
+.banner .primary-button{
+    z-index: 3;
 }
 /*====================REUSABLE SELECTOR=====================*/
 /*====================REUSABLE SELECTOR=====================*/
