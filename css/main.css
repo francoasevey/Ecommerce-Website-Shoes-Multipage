@@ -959,7 +959,43 @@ form.search button:hover{
 .menu-bottom nav li a:hover{
     color: var(--dark-color);
 }
-/*====================REUSABLE SELECTOR=====================*/
+.menu-bottom nav li a span{
+    font-size: var(--font-smaller);
+}
+.menu-bottom nav li a i{
+    font-size: 1.25em;
+}
+.menu-bottom .fly-item{
+    right: 50%;
+    width: 16px;
+    border-radius: var(--percent50);
+    margin-right: -20px;
+    background-color: var(--secondary-dark-color);
+}
+/*====================SEARCH=====================*/
+.search-bottom{
+    position: fixed;
+    bottom: 60px;
+    width: var(--percent100);
+    padding: 2.5em 0;
+    background-color: var(--secondary-dark-color);
+    z-index: 1000;
+    visibility: hidden;
+    opacity: 0;
+    will-change: visibility, opacity;
+}
+.showsearch .search-bottom{
+    visibility: inherit;
+    opacity: 1;
+}
+.search-bottom .t-close{
+    position: absolute;
+    top: -54px;
+    right: 0;
+}
+.search-bottom .t-close:hover{
+    background-color: var(--primary-color);
+}
 /*====================REUSABLE SELECTOR=====================*/
 /*====================REUSABLE SELECTOR=====================*/
 /*====================REUSABLE SELECTOR=====================*/
