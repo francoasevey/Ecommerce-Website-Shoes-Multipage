@@ -1014,7 +1014,8 @@ form.search button:hover{
     visibility: inherit;
 }
 /*====================PAGE HOME=====================*/
-.page-home .dpt-cat .dpt-trigger{
+.page-home .dpt-cat .dpt-trigger,
+.dpt-trigger .ri-close-line{
     display: none;
 }
 /*====================REUSABLE SELECTOR=====================*/
