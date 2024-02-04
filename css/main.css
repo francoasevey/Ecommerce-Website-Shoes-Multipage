@@ -1018,6 +1018,9 @@ form.search button:hover{
 .dpt-trigger .ri-close-line{
     display: none;
 }
+.showdpt .dpt-trigger .ri-close-line{
+    display: block;
+}
 /*====================REUSABLE SELECTOR=====================*/
 /*====================REUSABLE SELECTOR=====================*/
 /*====================REUSABLE SELECTOR=====================*/
