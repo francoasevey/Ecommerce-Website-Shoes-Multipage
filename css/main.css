@@ -1013,7 +1013,10 @@ form.search button:hover{
     opacity: 1;
     visibility: inherit;
 }
-/*====================REUSABLE SELECTOR=====================*/
+/*====================PAGE HOME=====================*/
+.page-home .dpt-cat .dpt-trigger{
+    display: none;
+}
 /*====================REUSABLE SELECTOR=====================*/
 /*====================REUSABLE SELECTOR=====================*/
 /*====================REUSABLE SELECTOR=====================*/
