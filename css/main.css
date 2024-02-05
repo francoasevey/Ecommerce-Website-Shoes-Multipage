@@ -1021,7 +1021,22 @@ form.search button:hover{
 .showdpt .dpt-trigger .ri-close-line{
     display: block;
 }
-/*====================REUSABLE SELECTOR=====================*/
+/*====================BREADCRUMB=====================*/
+.breadcrumb{
+    font-size: var(--font-small);
+    margin-bottom: 2em;
+}
+.breadcrumb li:not(:last-child)::after{
+    content: '/';
+    padding: 0 0.35em;
+}
+.breadcrumb li:last-child{
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--light-text-color);
+}
 /*====================REUSABLE SELECTOR=====================*/
 /*====================REUSABLE SELECTOR=====================*/
 /*====================REUSABLE SELECTOR=====================*/
