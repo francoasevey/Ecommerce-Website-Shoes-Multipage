@@ -1123,7 +1123,7 @@ form.search button:hover{
     position: relative;
     margin: 0 0.5em 0.5em;
 }
-.products .variant .circle{
+.products :where(.variant, .actions) .circle{
     display: block;
     position: static;
     top: 0;
@@ -1153,6 +1153,66 @@ form.search button:hover{
 .single-product .variant form p input:checked + label{
     background-color: transparent;
     border: 2px solid var(--dark-color);
+    color: var(--white-color);
+}
+
+.products .sizes .variant label::before{
+    background-color: var(--white-color);
+}
+.products .sizes .variant label span{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: var(--percent100);
+    height: var(--percent100);
+    font-size: 0.85em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.products .sizes .variant form p input:checked + label::before{
+    background-color: var(--dark-color);
+    opacity: 1;
+}
+
+.products .actions{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2em;
+}
+.products .qty-control{
+    width: fit-content;
+    padding: 0.5em;
+    border: 1px solid var(--border-color);
+    margin: 0 2em 2em 0;
+}
+.products .actions :where(input, button){
+    font-size: 1.25em;
+    outline: 0;
+    border: 0;
+}
+.products .actions input{
+    width: 50px;
+    text-align: center;
+}
+.products .qty-control button::before{
+    background-color: transparent;
+}
+.products .actions .button-cart{
+    flex: 1;
+    min-width: 200px;
+}
+.products .actions .button-cart button{
+    width: var(--percent100);
+    cursor: pointer;
+}
+.wish-share a{
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: var(--fw7);
+    margin: 1em 2em 1em 0;
+    transition: var(--trans-color);
 }
 /*====================REUSABLE SELECTOR=====================*/
 /*====================REUSABLE SELECTOR=====================*/
