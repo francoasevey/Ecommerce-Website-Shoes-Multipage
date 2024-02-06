@@ -1309,7 +1309,33 @@ form.search button:hover{
 .products .review-block-body .item:not(:last-child){
     border-bottom: 1px solid var(--border-color);
 }
-/*====================REVIEW PRODUCT=====================*/
+/*====================REVIEW PRODUCT STARS=====================*/
+.review-form .rating{
+    flex-wrap: wrap;
+}
+.review-form p{
+    font-size: 1.25em;
+    margin-right: 1em;
+}
+.review-form .rate-this input{
+    display: none;
+}
+.review-form .rate-this label{
+    float: right;
+    font-size: 2em;
+    color: var(--secondary-dark-color);
+}
+.rate-this > input:checked ~ label,
+.rate-this:not(:checked) > label:hover,
+.rate-this:not(:checked) > label:hover ~ label{
+    color: #f1c40e;
+}
+.rate-this > input:checked + label:hover,
+.rate-this > input:checked ~ label:hover,
+.rate-this > label:hover ~ input:checked ~ label,
+.rate-this > input:checked ~ label:hover ~ label{
+    color: #ffed85;
+}
 @media screen and (min-width: 481px) {
     .products.main .item{
         flex: 0 0 50%;
