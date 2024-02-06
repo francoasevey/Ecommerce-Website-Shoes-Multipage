@@ -1355,7 +1355,23 @@ form label{
     margin-bottom: 0.5em;
     text-transform: uppercase;
 }
-
+/*====================PAGE OFFER PRODUCTS=====================*/
+.page-single .stock{
+    margin: 2em 0;
+}
+.page-single .stock .qty span:last-child{
+    color: initial;
+}
+.page-single .stock .bar{
+    height: 10px;
+}
+.page-single .stock .bar .available{
+    margin: 0;
+    border-radius: 0;
+    background-color: var(--secondary-dark-color);
+}
+/*====================REVIEW PRODUCT STARS=====================*/
+/*====================REVIEW PRODUCT STARS=====================*/
 @media screen and (min-width: 481px) {
     .products.main .item{
         flex: 0 0 50%;
