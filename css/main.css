@@ -1221,6 +1221,8 @@ form.search button:hover{
     text-transform: uppercase;
     padding: 1em 1.25em;
     border-top: 1px solid var(--border-color);
+    gap: 1em;
+    align-items: flex-start;
 }
 .products .collapse .has-child > a::before{
     content: '+';
@@ -1300,9 +1302,12 @@ form.search button:hover{
     font-weight: var(--fw7);
     text-transform: uppercase;
 }
-.products .review-block-body .review-title{
+.products .review-block-body :where(.review-title, .view-all){
     font-size: 1.25em;
     justify-content: end;
+}
+.products .review-block-body .item:not(:last-child){
+    border-bottom: 1px solid var(--border-color);
 }
 /*====================REVIEW PRODUCT=====================*/
 @media screen and (min-width: 481px) {
