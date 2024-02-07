@@ -1131,7 +1131,7 @@ form.search button:hover{
     cursor: pointer;
     z-index: 1;
 }
-.products .variant input{
+:where(.products .variant, .filter-block:not(.pricing)) input{
     clip: rect(0,0,0,0);
     overflow: hidden;
     position: absolute;
@@ -1428,6 +1428,53 @@ form label{
     top: 2px;
     left: 2px;
     opacity: 0;
+}
+.filter-block input:checked + label .checked::before{
+    opacity: 1;
+}
+.filter-block li .count{
+    margin-left: auto;
+    color: var(--light-text-color);
+}
+.bycolor label[for="cored"]::before{
+    background-color: var(--primary-color);
+}
+.bycolor label[for="colight"]::before{
+    background-color: var(--border-color);
+}
+.bycolor input:checked + label{
+    background-color: transparent;
+    border: 2px solid var(--dark-color);
+}
+input[type="range"]{
+    -webkit-appearance: none;
+    width: var(--percent100);
+}
+input[type="range"]:focus{
+    outline: 0;
+}
+input[type="range"]::-webkit-slider-runnable-track{
+    width: var(--percent100);
+    height: 5px;
+    cursor: pointer;
+    background-color: var(--border-color);
+    box-shadow: none;
+    border: 0;
+}
+input[type="range"]::-webkit-slider-thumb{
+    z-index: 2;
+    position: relative;
+    height: 18px;
+    width: 14px;
+    background-color: var(--primary-color);
+    -webkit-appearance: none;
+    margin-top: -7px;
+}
+.byprice .price-range{
+    display: flex;
+    justify-content: space-between;
+    color: var(--light-text-color);
+    margin-top: 0.5em;
 }
 /*====================REVIEW PRODUCT STARS=====================*/
 @media screen and (min-width: 481px) {
