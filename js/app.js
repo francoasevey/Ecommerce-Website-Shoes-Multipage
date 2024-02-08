@@ -109,3 +109,22 @@ document.addEventListener('click', (e) =>{
     Fpopup.classList.remove('show')
   }
 })
+
+const divToShow = '.mini-cart';
+const divPopup = document.querySelector(divToShow);
+const divTrigger = document.querySelector('.cart-trigger');
+
+divTrigger.addEventListener('click', ()=> {
+  setTimeout(() =>{
+    if (!divPopup.classList.contains('show')) {
+      divPopup.classList.add('show');
+    }
+  }, 250)
+})
+
+document.addEventListener('click', (e) => {
+  const isClosest = e.target.closest(divToShow);
+  if (!isClosest && divPopup.classList.contains('show')) {
+    divPopup.classList.remove('show');
+  }
+})

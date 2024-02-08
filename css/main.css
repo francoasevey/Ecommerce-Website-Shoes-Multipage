@@ -1631,6 +1631,15 @@ input[type="range"]::-webkit-slider-thumb{
     text-align: center;
     margin-bottom: 1em;
 }
+.mini-cart.show{
+    visibility: visible;
+    opacity: 1;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    max-width: 400px;
+    width: 90%;
+}
 /*====================CART=====================*/
 /*====================CART=====================*/
 /*====================CART=====================*/
