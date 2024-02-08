@@ -1675,6 +1675,9 @@ input[type="range"]::-webkit-slider-thumb{
 .products.cart .qty-control button{
     cursor: pointer;
 }
+.products.cart table tbody tr{
+    border-bottom: 1px solid var(--border-color);
+}
 /*====================CART=====================*/
 /*====================CART=====================*/
 /*====================CART=====================*/
