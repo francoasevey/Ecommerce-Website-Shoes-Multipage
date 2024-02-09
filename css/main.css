@@ -1138,7 +1138,7 @@ form.search button:hover{
     height: 0;
     width: 0;
 }
-.products .variant label::before{
+.products .colors .variant label::before{
     opacity: 1;
 }
 .products .variant label[for="cogrey"]::before{
@@ -1697,6 +1697,55 @@ input[type="range"]::-webkit-slider-thumb{
     line-height: 50px;
     background-color: var(--white-color);
     border: 3px solid var(--dark-color);
+}
+.cart-summary .coupon button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 0;
+    outline: 0;
+    font-size: 1em;
+    padding: 0 2.5em;
+    line-height: 56px;
+    background-color: var(--dark-color);
+    color: var(--white-color);
+    cursor: pointer;
+}
+.cart-summary .shipping-rate{
+    padding: 0 2em 0 1em;
+}
+.cart-summary .shipping-rate .has-child > a{
+    font-size: 1em;
+    margin: 2em 0;
+    border: 0;
+}
+.cart-summary .content form{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+.styled :where(input, select, textarea){
+    padding: 0.75em;
+    outline: 0;
+    background-color: var(--white-color);
+    border-width: 0 0 3px 0;
+    border-style: solid;
+    border-color: var(--border-color);
+}
+.products .cart-summary .variant form label{
+    position: relative;
+    border: 0;
+    background-color: var(--white-color);
+    transform: scale(.5);
+}
+.cart-summary .variant p span{
+    position: absolute;
+    top: 0;
+    left: 40px;
+    line-height: 3;
+}
+.cart-summary .variant input:checked + label::before{
+    opacity: 1;
 }
 /*====================CART=====================*/
 /*====================CART=====================*/
