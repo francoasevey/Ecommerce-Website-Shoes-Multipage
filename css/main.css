@@ -997,7 +997,7 @@ form.search button:hover{
     background-color: var(--primary-color);
 }
 /*====================OVERLAY=====================*/
-.overlay{
+/*.overlay{
     position: fixed;
     width: var(--percent100);
     height: var(--percent100);
@@ -1012,7 +1012,7 @@ form.search button:hover{
 :where(.showmenu, .showmodal) .overlay{
     opacity: 1;
     visibility: inherit;
-}
+}*/
 /*====================PAGE HOME=====================*/
 .page-home .dpt-cat .dpt-trigger,
 .dpt-trigger .ri-close-line, .showdpt .dpt-trigger .ri-menu-3-line{
